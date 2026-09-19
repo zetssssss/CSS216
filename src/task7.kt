@@ -1,11 +1,25 @@
 fun main() {
-    val Steps = 4000
-    val caloriesBurned = PEDOMETERstepsTOcalories(Steps);
-    println("Walking $Steps steps burns $caloriesBurned calories")
+    val firstUserEmailId = "user_one@gmail.com"
+
+    println(displayAlertMessage(emailId = firstUserEmailId))
+    println()
+
+    val secondUserOperatingSystem = "Windows"
+    val secondUserEmailId = "user_two@gmail.com"
+
+    println(displayAlertMessage(secondUserOperatingSystem, secondUserEmailId))
+    println()
+
+    val thirdUserOperatingSystem = "Mac OS"
+    val thirdUserEmailId = "user_three@gmail.com"
+
+    println(displayAlertMessage(thirdUserOperatingSystem, thirdUserEmailId))
+    println()
 }
 
-fun PEDOMETERstepsTOcalories(NumberOFStepS: Int): Double {
-    val CaloriesBURNEDforEachStep = 0.04
-    val TotalCALORIESburned = NumberOFStepS * CaloriesBURNEDforEachStep
-    return TotalCALORIESburned
+fun displayAlertMessage(
+    operatingSystem: String = "Unknown OS",
+    emailId: String
+): String {
+    return "There's a new sign-in request on $operatingSystem for your Google Account $emailId."
 }
