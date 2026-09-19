@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a87c36b9-1233-4a3f-9957-afaf0e9a850a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Task5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task6.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/task6.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,7 @@
     "Kotlin.MainKt.executor": "Run",
     "Kotlin.Task4Kt.executor": "Run",
     "Kotlin.Task5Kt.executor": "Run",
+    "Kotlin.Task6Kt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",

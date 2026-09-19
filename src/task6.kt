@@ -1,25 +1,25 @@
 fun main() {
-    val firstNumber = 10
-    val secondNumber = 5
-    val thirdNumber = 8
+    val firstUserEmailId = "user_one@gmail.com"
 
-    val result = add(firstNumber, secondNumber)
-    val anotherResult = add(firstNumber, thirdNumber)
+    println(displayAlertMessage(emailId = firstUserEmailId))
+    println()
 
-    val subtractionResult = subtract(firstNumber, secondNumber)
-    val anotherSubtractionResult = subtract(firstNumber, thirdNumber)
+    val secondUserOperatingSystem = "Windows"
+    val secondUserEmailId = "user_two@gmail.com"
 
-    println("$firstNumber + $secondNumber = $result")
-    println("$firstNumber + $thirdNumber = $anotherResult")
+    println(displayAlertMessage(secondUserOperatingSystem, secondUserEmailId))
+    println()
 
-    println("$firstNumber - $secondNumber = $subtractionResult")
-    println("$firstNumber - $thirdNumber = $anotherSubtractionResult")
+    val thirdUserOperatingSystem = "Mac OS"
+    val thirdUserEmailId = "user_three@gmail.com"
+
+    println(displayAlertMessage(thirdUserOperatingSystem, thirdUserEmailId))
+    println()
 }
 
-fun add(firstNumber: Int, secondNumber: Int): Int {
-    return firstNumber + secondNumber
-}
-
-fun subtract(firstNumber: Int, secondNumber: Int): Int {
-    return firstNumber - secondNumber
+fun displayAlertMessage(
+    operatingSystem: String = "Unknown OS",
+    emailId: String
+): String {
+    return "There's a new sign-in request on $operatingSystem for your Google Account $emailId."
 }
